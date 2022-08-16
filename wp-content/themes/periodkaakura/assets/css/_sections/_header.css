@@ -1,0 +1,26 @@
+.desktop-nav-container {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-nav-container figure img {
+    height: 53px;
+    width: 53px;
+}
+
+#site-navigation ul {
+    display: flex;
+    gap: 20px;
+}
+
+.desktop-nav-container ul li a {
+    font-weight: 700;
+    color: var(--color-light-red);
+}
+
+.desktop-nav-container ul li.active a {
+    font-weight: 800;
+}
+
