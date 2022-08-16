@@ -368,7 +368,8 @@ video {
   height: auto;
 }
     :root {
-        --color-light-red: #9c1112;
+        --color-theme-red: #9c1112;
+        --color-theme-gray: #ECECEC;
     }
 
 *, ::before, ::after {
@@ -536,10 +537,10 @@ video {
     max-width: 1024px;
   }
 }
-@media (min-width: 1272px) {
+@media (min-width: 1432px) {
 
   .container {
-    max-width: 1272px;
+    max-width: 1432px;
   }
 }
 .visible {
@@ -548,11 +549,23 @@ video {
 .absolute {
   position: absolute;
 }
+.relative {
+  position: relative;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
 .flex {
   display: flex;
 }
 .hidden {
   display: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.text-theme-red {
+  color: var(--color-theme-red);
 }
 
 /** {*/
@@ -586,4 +599,32 @@ img.contain-image {
        object-fit: contain;
     -o-object-position: center;
        object-position: center;
+}
+
+.pkk-button {
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    border-radius: 25px;
+    color: var(--color-theme-red);
+    background: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px 43px;
+}
+
+.pkk-button.bg-light-red {
+    background: var(--color-theme-red);
+    color: #fff;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
 }
